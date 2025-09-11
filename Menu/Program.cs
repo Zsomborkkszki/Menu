@@ -48,6 +48,7 @@ namespace Menu
                 }
                 else if (choice == "3")
                 {
+                    Console.Beep();
                     Console.WriteLine("Biztosan ki akar lépni?(i/n)");
                     choice = Console.ReadLine() != "i" ? " " : "3";
                 }
