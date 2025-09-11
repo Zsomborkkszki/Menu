@@ -28,14 +28,30 @@ namespace Menu
                 if (choice == "1")
                 {
                     Console.Clear();
-                    
+                    Console.WriteLine("Add meg a neved: ");
+                    name = Console.ReadLine();
+                    Console.WriteLine("Add meg a nemed (f/n): ");
+                    ffi = Console.ReadLine().ToLower() == "f";
+                    Console.WriteLine("Addj meg a születési évét: ");
+                    age = int.Parse(Console.ReadLine());
                     Console.WriteLine("\nSikeresen rögzítettük. Enterrel tovább...");
                     Console.ReadLine();
                 }
                 else if (choice == "2")
                 {
                     
+                    Console.WriteLine($"Név: {name}\n" +
+                        $"Nem: {ffi}\n" +
+                        $"Születési év {age}\n");
+                    Console.WriteLine("Enterrel tovább...");
+                    Console.ReadLine();
                 }
+                else if (choice == "3")
+                {
+                    Console.WriteLine("Biztosan ki akar lépni?(i/n)");
+                    choice = Console.ReadLine() != "i" ? " " : "3";
+                }
+
                 else
                 {
                     Console.WriteLine("Rossz gomb, próbáld újra");
