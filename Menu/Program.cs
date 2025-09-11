@@ -19,6 +19,9 @@ namespace Menu
             {
                 Console.Clear();
                 Console.Title = "Személyesadatok kezelése";
+                Console.BackgroundColor = ConsoleColor.DarkCyan;
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.SetCursorPosition(10, 1);
                 Console.WriteLine("1 - Személyes adatok bevitele");
                 Console.WriteLine("2 - Személyes adatok kiíratása");
                 Console.WriteLine("3 - Kilépés");
