@@ -23,8 +23,11 @@ namespace Menu
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.SetCursorPosition(10, 1);
                 Console.WriteLine("1 - Személyes adatok bevitele");
+                Console.SetCursorPosition(10, 2);
                 Console.WriteLine("2 - Személyes adatok kiíratása");
+                Console.SetCursorPosition(10, 3);
                 Console.WriteLine("3 - Kilépés");
+                Console.SetCursorPosition(10, 3);
                 Console.Write("\nVálasszon a menüből: ");
                 choice = Console.ReadLine();
 
