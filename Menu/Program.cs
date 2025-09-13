@@ -27,8 +27,8 @@ namespace Menu
                 Console.WriteLine("2 - Személyes adatok kiíratása");
                 Console.SetCursorPosition(10, 3);
                 Console.WriteLine("3 - Kilépés");
-                Console.SetCursorPosition(10, 3);
-                Console.Write("\nVálasszon a menüből: ");
+                Console.SetCursorPosition(10, 4);
+                Console.Write("Válasszon a menüből: ");
                 choice = Console.ReadLine();
 
                 if (choice == "1")
